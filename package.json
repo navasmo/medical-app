@@ -1,7 +1,7 @@
 {
   "name": "medical-app",
   "version": "0.1.0",
-  "homepage": "navasmo.github.io",
+  "homepage": "https://navasmo.github.io/medical-app",
   "private": true,
   "dependencies": {
     "@material-table/core": "^4.3.31",

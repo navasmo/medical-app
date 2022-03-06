@@ -1,0 +1,30 @@
+{
+  "name": "my-server-app",
+  "version": "1.0.0",
+  "homepage": "https://navasmo.github.io/MA",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/navasmo/MA.git"
+  },
+  "scripts": {
+    "client": "cd ./medical-app && npm start",
+    "server": "node server.js",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "build": " && cd ./medical-app && npm run build",
+    "deploy": "cd ./medical-app && npm run build && gh-pages -d build"
+    
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "md5": "^2.3.0",
+    "mysql": "^2.18.1",
+    "react-native-sqlite-storage": "^6.0.1",
+    "sqlite3": "^5.0.0"
+  }
+}
+

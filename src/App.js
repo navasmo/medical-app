@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './Header';
 import TreatmentRecordPanel from './MedicalTreatmentPanel';
 import PatientTable from './Table';
+import "./app.scss" 
 //imported dependecies and app components.
 
 function App() {

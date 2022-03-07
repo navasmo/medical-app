@@ -168,9 +168,10 @@ function PatientTable() {
 
 
 
-  return (
+  return ( 
+  <div className='table'>
     <div className="App" >
-      
+     
       <Grid container spacing={1}>
           <Grid item xs={1}></Grid>
           <Grid item xs={10}>
@@ -183,7 +184,7 @@ function PatientTable() {
               </Alert>
             }       
           </div>
-            <MaterialTable
+            <MaterialTable className="muitable"
             // headers and data retrieved from the database and listed on material ui table
               title="Patients Record"
               columns={columns}
@@ -209,6 +210,7 @@ function PatientTable() {
           </Grid>
           <Grid item xs={10}></Grid>
         </Grid>
+        </div>
     </div>
   );
 }

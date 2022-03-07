@@ -103,16 +103,15 @@ function TreatmentRecordPanel() {
               
             <table>
             <tbody>
-            <tr>
+            <tr className="row">
             <td>
-            <TextField type="text" placeholder='Treatment ID' value ={treatId} onChange ={e => setID(e.target.value) }/></td>
-            
-                     
-            <td><TextField type="text" placeholder='Patient Name' value ={Pname} onChange ={e => setName(e.target.value) }/></td>
+            <TextField className = "form1" type="text" placeholder='Treatment ID' value ={treatId} onChange ={e => setID(e.target.value) }/></td>
+                 
+            <td><TextField className = "form1" type="text" placeholder='Patient Name' value ={Pname} onChange ={e => setName(e.target.value) }/></td>
           
-            
+            <td><TextField className = "form1" type="text" placeholder='Start Date' value ={startDate} onChange ={e => setDate(e.target.value) }/></td>
             <td>
-            <input placeholder="Choose Category" type="text" list="category" value ={category} onChange ={e => setCategory(e.target.value) } />
+            <input className="pick" placeholder="Choose Category" type="text" list="category" value ={category} onChange ={e => setCategory(e.target.value) } />
             <datalist id="category">
             <option>Consulation</option>
             <option>Tests and Health Checkup</option>
@@ -123,7 +122,7 @@ function TreatmentRecordPanel() {
             </datalist>
              
             </td>
-            <td><input placeholder="Choose Allergies" type="text" list="allergies" value ={allergies} onChange ={e => setAllergies(e.target.value) } />
+            <td><input className="pick" placeholder="Choose Allergies" type="text" list="allergies" value ={allergies} onChange ={e => setAllergies(e.target.value) } />
             <datalist id="allergies">
             <option>None</option>
             <option>Penicillin and related antibiotics</option>
@@ -133,30 +132,30 @@ function TreatmentRecordPanel() {
             <span></span>
             </datalist></td>
          
-            <td><input placeholder="Prescription Required" type="text" list="prescription" value ={prescription} onChange ={e => setPrescription(e.target.value) } />
+            <td><input className="pick" placeholder="Prescription Required" type="text" list="prescription" value ={prescription} onChange ={e => setPrescription(e.target.value) } />
             <datalist id="prescription">
             <option>Yes</option>
             <option>No</option>
             <span></span>
             </datalist></td>
             
-            <td><TextField type="text" placeholder='Start Date' value ={startDate} onChange ={e => setDate(e.target.value) }/></td>
+            
           
             </tr>
             </tbody>
             </table>
 
     <div className='Buttons'>
-          <table>
+          <table >
               <tbody>
-                  <tr>
+                  <tr >
           <td>  <Button color="primary" variant="contained" onClick={SaveNPHandler}>Add Patient</Button> 
             </td>
             <td><Button color="primary" variant="contained" onClick={DeletePRHandler}>Remove Patient</Button> 
             </td>
            <td> <Button color="primary" variant="contained" onClick={UpdatePRHandler}>Update Patient Info</Button> 
             </td> 
-            <h3>.</h3>
+           
             </tr>
             </tbody>
             </table>

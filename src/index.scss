@@ -1,0 +1,179 @@
+@import "../../global.scss";
+
+body {
+  background-image: url(./bgimage.jpg);
+  color: rgb(0, 0, 0);
+ 
+  font-family: Arial;
+  text-align: center;
+  @include mobile{
+    width : 550px;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1px;
+  }
+}
+
+.App {
+  
+  background-color: rgba(255, 255, 255, 0.63);
+  color: rgb(0, 0, 0);
+  
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+
+  @include mobile{
+    width : 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1px;
+  }
+
+
+.formHead {
+  font-size: 20px;
+  float: top;
+  color: rgb(8, 98, 150);
+}
+.form1{
+
+ @include mobile{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    
+  }
+}
+
+.muitable{
+  @include mobile{
+    width: 10px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1px;
+  }
+}
+.pick{
+
+  @include mobile{
+     flex-direction: column;
+     align-items: center;
+     display: flex;
+     width: 165px;
+     height: 30px;
+     
+   }
+ }
+
+
+form {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.596);
+  color: rgba(0, 0, 0, 0.24);
+  width : "20px";
+  @include mobile{
+    flex-direction: column;
+    align-items: center;
+  }
+  .patient-form {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    input {
+      width: 300px;
+      height: 30px;
+      font-size: 14px;
+
+      @include mobile {
+        width: 200px;
+        height: 20px;
+        
+      }header {
+
+  padding: 20px;
+  text-align: left; 
+  background: #ffffff81;
+  color: rgb(33, 95, 153);
+  background-size: auto;
+  @include mobile{
+      
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+button {
+  flex-direction: column;
+      align-items: center;
+  @include mobile{
+  display: flex;
+      flex-direction: column;
+      align-items: center;
+      display: flex;
+      
+      
+  }
+
+
+
+
+
+}
+}
+    }
+  }
+} 
+
+}
+img{
+  width: 300px;
+  height: 300px;
+  float: left;
+  @include mobile{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+}
+h1{
+  font-size: 100;
+  color: rgb(33, 95, 153);
+  @include mobile{
+    font-size: 60;
+    color: rgb(33, 95, 153);
+    flex-direction: column;
+    align-items: right;
+    display: flex;
+  }
+}
+h2 {
+  color: rgb(33, 95, 153);
+  font-size: 50;
+  @include mobile{
+    font-size: 50;
+    color: rgb(33, 95, 153);
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+}
+.row{
+  @include mobile{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    
+  }
+}
